@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='style.css' />
-    <script src="src/index.js" defer></script>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Agent App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" class="search-box">
+        <button>X</button>
+      </div>
+      <div class="agent-list"></div>
+      <h2 class="agent-menu">Agent Info:</h2>
+      <div class="view-agent">
+        <ul class="agent-facts">
+          <li id="agent-name">Name: Sova</li>
+          <ul class="agent-abilities">
+            <li id="ability-one">Ability1: Recon Arrow</li>
+            <li id="ability-two">Ability2: Shock Arrow</li>
+            <li id="ability-three">Ability3: Drone</li>
+          </ul>
+          <li id="agent-type">Surveyor</li>
+        </ul>
+      </div>
 
-    <title>Test your knowledge</title>
-    </head>
-
-    <body>
-        <h1>Click for each question</h1>
-
-        <section>
-            <form>
-              <label for="searchByID">Search By ID</label>
-              <input id="searchByID" type="text" placeholder="Enter ID here"/>
-              <input type="submit" />
-            </form>
-          </section>
-    </body>
-
-    </html>
+    </div>
+  </body>
+</html>
